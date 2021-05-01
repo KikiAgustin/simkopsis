@@ -47,8 +47,8 @@
 				<form class="login-form" action="<?= base_url('login') ?>" method="post">
 					<div class="row">
 						<div class="input-field col s12 center">
-							<img src="<?= base_url('assets/images/favicon/simkopsis-brand.png') ?>" alt="" class=" responsive-img valign profile-image-login">
-							<p class="center login-form-text">sistem informasi koperasi syariah</p>
+							<img src="<?= base_url('assets/images/favicon/simkopsis-icon.png') ?>" alt="" class=" responsive-img valign profile-image-login">
+							<p class="center login-form-text">sistem informasi Perbankan</p>
 						</div>
 					</div>
 					<div class="row margin">
@@ -81,7 +81,7 @@
 					<div class="row">
 						<div class="input-field ">
 							<p class="margin right-align medium-small">
-								Repost by <a href="https://stokcoding.com/" title="StokCoding.com" target="_blank">StokCoding.com</a>
+								<!-- Repost by <a href="https://stokcoding.com/" title="StokCoding.com" target="_blank">StokCoding.com</a> -->
 							</p>
 						</div>
 					</div>

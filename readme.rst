@@ -1,8 +1,8 @@
 ###################
-Sistem Informasi Koperasi Syariah
+Sistem Informasi Perbankan
 ###################
 
-Sistem Informasi Koperasi Simpan Pinjam Syariah berbasi web, Copyright 2019 digtive.id
+Sistem Informasi Perbankan berbasi web, Copyright 2021
 
 
 *******************

@@ -13,8 +13,7 @@
 							</h3>
 						</div>
 						<div class="input-field col s12 m11">
-							<input id="search-anggota" type="text" class="validate custom-box-search"
-								   name="anggota-form" required placeholder="ketikkan nama anggota">
+							<input id="search-anggota" type="text" class="validate custom-box-search" name="anggota-form" required placeholder="ketikkan nama anggota">
 							<input type="text" name="anggota" id="id-anggota" hidden>
 							<!--set jenis simpanan directly-->
 							<input type="text" name="jenis" value="amanah" hidden>
@@ -28,8 +27,7 @@
 
 						<div class="input-field col s12 m12 " style="margin-bottom: 30px">
 							<i class="mdi-device-access-time prefix grey-text text-lighten-1"></i>
-							<input id="tenggat" type="number" class="validate" name="tenggat-pinjam"
-								   required>
+							<input id="tenggat" type="number" class="validate" name="tenggat-pinjam" required>
 							<label for="tenggat">Tenggat Waktu Peminjaman</label>
 						</div>
 
@@ -58,8 +56,8 @@
 								<div class="card-content green-text ">
 									<p>PINJAMAN MUDHARABAH : Mudharobah adalah akad kerjasama usaha antara pemilik
 										dana sebagai pihak yang menyediakan modal dengan pihak pengelola modal
-										(koperasi), untuk diusahakan dengan bagi hasil (nisbah) sesuai dengan
-										kesepakatan dimuka dari kedua belah pihak. Dalam hal ini Koperasi akan
+										, untuk diusahakan dengan bagi hasil (nisbah) sesuai dengan
+										kesepakatan dimuka dari kedua belah pihak. Dalam hal ini kami akan
 										memberikan 100% permodalan kepada pengusaha yang telah memiliki tenaga kerja
 										dan keterampilan tetapi belum memiliki modal sama sekali.</p>
 								</div>
@@ -70,8 +68,7 @@
 
 					<div class="row">
 						<div class="input-field col s12 m6">
-							<a href="<?= base_url('anggota') ?>"
-							   class="btn waves-effect col s12 z-depth-0 grey lighten-4 black-text">batalkan</a>
+							<a href="<?= base_url('anggota') ?>" class="btn waves-effect col s12 z-depth-0 grey lighten-4 black-text">batalkan</a>
 						</div>
 						<div class="input-field col s12 m6">
 							<button type="submit" name="tambah" class="btn waves-effect waves-light col s12 blue" id="tombol-tambah">

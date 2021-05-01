@@ -2,9 +2,9 @@
     <div class="row">
         <div class="col s12 m12">
             <div class="card-panel">
-                <h5 class="more-text center grey-text">tambah data anggota koperasi</h5>
+                <h5 class="more-text center grey-text">tambah data anggota</h5>
 
-                <form action="<?= base_url('anggota/tambah')?>" method="post" autocomplete="off">
+                <form action="<?= base_url('anggota/tambah') ?>" method="post" autocomplete="off">
                     <h6 class="divider"></h6>
                     <h6 class="more-text">Informasi pribadi</h6>
 
@@ -97,20 +97,20 @@
 
                         <div class="input-field col s12 m6">
                             <i class="mdi-communication-email prefix grey-text text-lighten-1"></i>
-                            <input id="email" type="email" name="email" >
+                            <input id="email" type="email" name="email">
                             <label for="email">Alamat Email</label>
                         </div>
 
                         <div class="input-field col s12 m6">
                             <i class="mdi-maps-pin-drop prefix grey-text text-lighten-1"></i>
-                            <input id="alamat" type="text" name="alamat" >
+                            <input id="alamat" type="text" name="alamat">
                             <label for="alamat">Alamat Saat Ini</label>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="input-field col s12 m6">
-                            <a href="<?= base_url('anggota')?>" class="btn waves-effect col s12 z-depth-0 grey lighten-4 black-text">batalkan</a>
+                            <a href="<?= base_url('anggota') ?>" class="btn waves-effect col s12 z-depth-0 grey lighten-4 black-text">batalkan</a>
                         </div>
                         <div class="input-field col s12 m6">
                             <button type="submit" name="tambah" class="btn waves-effect waves-light col s12 blue">tambahkan</button>
