@@ -45,7 +45,7 @@ class AuthController extends GLOBAL_Controller
 					$this->session->set_userdata($sessionData);
 
 					parent::alert('alert', 'user-welcome');
-					redirect(base_url());
+					redirect(base_url('dasboard'));
 				} else {
 					parent::alert('alert', 'error-login');
 				}

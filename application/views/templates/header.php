@@ -53,7 +53,7 @@
                     <ul class="left">
                         <li>
                             <h1 class="logo-wrapper">
-                                <a href="<?= base_url() ?>" class="brand-logo darken-1">
+                                <a href="<?= base_url('dasboard') ?>" class="brand-logo darken-1">
                                     Perbankan
                                 </a>
                             </h1>
@@ -101,7 +101,7 @@
                         <p class="ultra-small margin more-text">Menu Utama</p>
                     </li>
                     <li class="bold active">
-                        <a href="<?= base_url() ?>" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
+                        <a href="<?= base_url('dasboard') ?>" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
                     </li>
 
                     <li class="bold">

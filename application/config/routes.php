@@ -57,6 +57,10 @@ $route['anggota/ubah/(:any)'] = 'AnggotaController/ubah/$1';
 $route['anggota/hapus/(:any)'] = 'AnggotaController/hapus/$1';
 $route['anggota/(:any)'] = 'AnggotaController/detail/$1';
 
-$route['default_controller'] = 'AdminController';
+// Modul Dasboard
+
+$route['dasboard'] = 'AdminController';
+
+$route['default_controller'] = 'Home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
