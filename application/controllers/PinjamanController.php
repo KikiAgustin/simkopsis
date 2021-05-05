@@ -19,7 +19,7 @@ class PinjamanController extends GLOBAL_Controller
      * */
 	public function pinjamanMudharabah()
 	{
-		$data['title'] = 'Pinjaman Mudharabah';
+		$data['title'] = 'Kredit Modal Kerja UMKM';
 		$data['mudharabah'] = parent::model('PinjamanModel')->lihat_semua()->result_array();
 
 		parent::template('pinjaman/mudharabah', $data);
@@ -27,7 +27,7 @@ class PinjamanController extends GLOBAL_Controller
 
 	public function pinjamanMurabahah()
 	{
-		$data['title'] = 'Pinjaman Murabahah';
+		$data['title'] = 'Kredit usaha Mikro';
 		$data['murabahah'] = parent::model('PinjamanModel')->lihat_semua()->result_array();
 
 		parent::template('pinjaman/murabahah', $data);
@@ -35,7 +35,7 @@ class PinjamanController extends GLOBAL_Controller
 
 	public function pinjamanMusyarakah()
 	{
-		$data['title'] = 'Pinjaman Musyarakah';
+		$data['title'] = 'Kredit Modal Kerja Corporate';
 		$data['musyarakah'] = parent::model('PinjamanModel')->lihat_semua()->result_array();
 
 		parent::template('pinjaman/musyarakah', $data);
@@ -43,7 +43,7 @@ class PinjamanController extends GLOBAL_Controller
 
 	public function pinjamanIjarah()
 	{
-		$data['title'] = 'Pinjaman Ijarah';
+		$data['title'] = 'Kredit Investasi';
 		$data['ijarah'] = parent::model('PinjamanModel')->lihat_semua()->result_array();
 
 		parent::template('pinjaman/ijarah', $data);

@@ -57,6 +57,25 @@ $route['anggota/ubah/(:any)'] = 'AnggotaController/ubah/$1';
 $route['anggota/hapus/(:any)'] = 'AnggotaController/hapus/$1';
 $route['anggota/(:any)'] = 'AnggotaController/detail/$1';
 
+
+// Tabungan
+$route['tabungan-bisnis'] = 'SimpananController/simpananAmanah';
+$route['deposito-rupiah'] = 'SimpananController/simpananQurbanAqikah';
+
+// Pinjaman
+$route['kredit-modal-kerja-umkm'] = 'PinjamanController/pinjamanMudharabah';
+$route['kredit-usaha-mikro'] = 'PinjamanController/pinjamanMurabahah';
+$route['kredit-modal-kerja-corporate'] = 'PinjamanController/pinjamanMusyarakah';
+$route['kredit-investasi'] = 'PinjamanController/pinjamanIjarah';
+
+// Angsuran
+$route['angsuran-kredit-modal-kerja-umkm'] = 'AngsuranController/angsuranMudharabah';
+$route['angsuran-kredit-usaha-mikro'] = 'AngsuranController/angsuranMurabahah';
+$route['angsuran-kredit-modal-kerja-corporate'] = 'AngsuranController/angsuranMusyarakah';
+$route['angsuran-kredit-investasi'] = 'AngsuranController/angsuranIjarah';
+
+
+
 // Modul Dasboard
 
 $route['dasboard'] = 'AdminController';

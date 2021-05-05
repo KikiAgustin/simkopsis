@@ -118,15 +118,9 @@
                                 </a>
                                 <div class="collapsible-body">
                                     <ul>
-                                        <li><a href="<?= base_url('simpanan-amanah') ?>">Amanah</a>
+                                        <li><a href="<?= base_url('tabungan-bisnis') ?>">Tabungan Bisnis</a>
                                         </li>
-                                        <li><a href="<?= base_url('simpanan-qurban-aqikah') ?>">Qurban/Aqikah</a>
-                                        </li>
-                                        <li><a href="<?= base_url('simpanan-umrah') ?>">Umrah</a>
-                                        </li>
-                                        <li><a href="<?= base_url('simpanan-idul-fitri') ?>">Idul Fitri</a>
-                                        </li>
-                                        <li><a href="<?= base_url('simpanan-wadiah') ?>">Wadi'ah</a>
+                                        <li><a href="<?= base_url('deposito-rupiah') ?>">Deposito Rupiah</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -142,13 +136,13 @@
                                 </a>
                                 <div class="collapsible-body">
                                     <ul>
-                                        <li><a href="<?= base_url('pinjaman-mudharabah') ?>">Mudharabah</a>
+                                        <li><a href="<?= base_url('kredit-modal-kerja-umkm') ?>">Kredit Modal Kerja </a>
                                         </li>
-                                        <li><a href="<?= base_url('pinjaman-murabahah') ?>">Murabhahah</a>
+                                        <li><a href="<?= base_url('kredit-usaha-mikro') ?>">Kredit Usaha Mikro</a>
                                         </li>
-                                        <li><a href="<?= base_url('pinjaman-musyarakah') ?>">Musyarakah</a>
+                                        <li><a href="<?= base_url('kredit-modal-kerja-corporate') ?>">Kredit Modal Kerja</a>
                                         </li>
-                                        <li><a href="<?= base_url('pinjaman-ijarah') ?>">Ijarah</a>
+                                        <li><a href="<?= base_url('kredit-investasi') ?>">Kredit Investasi</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -164,13 +158,13 @@
                                 </a>
                                 <div class="collapsible-body">
                                     <ul>
-                                        <li><a href="<?= base_url('angsuran-mudharabah') ?>">Mudharabah</a>
+                                        <li><a href="<?= base_url('angsuran-kredit-modal-kerja-umkm') ?>">Kredit Modal Kerja</a>
                                         </li>
-                                        <li><a href="<?= base_url('angsuran-murabahah') ?>">Murabhahah</a>
+                                        <li><a href="<?= base_url('angsuran-kredit-usaha-mikro') ?>">Kredit Usaha Mikro</a>
                                         </li>
-                                        <li><a href="<?= base_url('angsuran-musyarakah') ?>">Musyarakah</a>
+                                        <li><a href="<?= base_url('angsuran-kredit-modal-kerja-corporate') ?>">Kredit Modal Kerja</a>
                                         </li>
-                                        <li><a href="<?= base_url('angsuran-ijarah') ?>">Ijarah</a>
+                                        <li><a href="<?= base_url('angsuran-kredit-investasi') ?>">Kredit investasi</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -178,7 +172,7 @@
                         </ul>
                     </li>
 
-                    <li class="no-padding">
+                    <!-- <li class="no-padding">
                         <ul class="collapsible collapsible-accordion">
                             <li class="bold">
                                 <a class="collapsible-header waves-effect waves-cyan">
@@ -198,7 +192,7 @@
                                 </div>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
 
                     <li class="li-hover">
                         <div class="divider"></div>
