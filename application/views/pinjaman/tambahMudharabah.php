@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col s12 m12">
 			<div class="card-panel">
-				<h5 class="more-text center grey-text">tambah data pinjaman mudharabah</h5>
+				<h5 class="more-text center grey-text">tambah data Kredi Modal Kerja UMKM</h5>
 
 				<form action="<?= base_url('pinjaman-mudharabah/tambah') ?>" enctype="multipart/form-data" method="post" autocomplete="off">
 
@@ -54,12 +54,7 @@
 						<div class="col s12 m12 ">
 							<div id="simpanan-alert" class="card green lighten-5 z-depth-1">
 								<div class="card-content green-text ">
-									<p>PINJAMAN MUDHARABAH : Mudharobah adalah akad kerjasama usaha antara pemilik
-										dana sebagai pihak yang menyediakan modal dengan pihak pengelola modal
-										, untuk diusahakan dengan bagi hasil (nisbah) sesuai dengan
-										kesepakatan dimuka dari kedua belah pihak. Dalam hal ini kami akan
-										memberikan 100% permodalan kepada pengusaha yang telah memiliki tenaga kerja
-										dan keterampilan tetapi belum memiliki modal sama sekali.</p>
+									<p>KREDIT MODAL KERJA : Kredit Modal Kerja Adalah fasilitas kredit yang diberikan untuk memenuhi kebutuhan modal kerja yang habis dalam satu siklus usaha dan atau kebutuhan modal kerja yang bersifat khusus seperti untuk membiayai inventory / piutang / proyek atau kebutuhan khusus lainnya.</p>
 								</div>
 							</div>
 						</div>

@@ -32,7 +32,7 @@
                     <?php
                     $no  = 1;
                     foreach ($amanah as $key => $value) :
-                        if ($value['simpanan_jenis'] === 'amanah') :
+                        if ($value['simpanan_jenis'] === 'tabungan-bisnis') :
                     ?>
                             <tr>
                                 <td class="grey-text text-darken-1"><?= $no ?></td>
@@ -49,7 +49,7 @@
                                 <td>
                                     <div class="row">
                                         <a href="#" class="btn-flat waves-effect waves-orange col l6 center" title="ubah data">
-                                            <i class="mdi-content-create orange-text"></i>
+                                            <i class="mdi-content-  create orange-text"></i>
                                         </a>
                                     </div>
                                 </td>
@@ -122,7 +122,7 @@
             <div class="col s12 m12 ">
                 <div id="simpanan-alert" class="card green lighten-5 z-depth-1">
                     <div class="card-content green-text ">
-                        <p>Tabungan Bisnis : Bank Mandiri mempersembahkan Mandiri Tabungan Bisnis yang memberikan segala kemudahan dan kenyamanan.</p>
+                        <p>Tabungan Bisnis : Mempersembahkan Tabungan Bisnis yang memberikan segala kemudahan dan kenyamanan.</p>
                     </div>
                 </div>
             </div>

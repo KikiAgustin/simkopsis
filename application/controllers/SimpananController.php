@@ -19,9 +19,9 @@ class SimpananController extends GLOBAL_Controller
         if (isset($_POST['simpan'])) {
             $data = array(
                 'simpanan_anggota_id' => parent::post('anggota'),
-                'simpanan_jenis' => 'amanah',
+                'simpanan_jenis' => 'tabungan-bisnis',
                 'simpanan_total' => parent::post('setoran'),
-                'simpanan_keterangan' => 'SIMPANAN AMANAH : Simpanan bersifat umum yang penyimpanan dan penarikannya dapat dilakukan kapan saja oleh nasabah pada jam kerja. Simpanan awal Rp 25.000 dan selanjutnya minimal Rp 10.000.'
+                'simpanan_keterangan' => 'TABUNGAN BISNIS : Tabungan Bisnis :  Mempersembahkan Tabungan Bisnis yang memberikan segala kemudahan dan kenyamanan.'
             );
 
             $simpan = parent::model('SimpananModel')->tambah($data);

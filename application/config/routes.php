@@ -68,6 +68,10 @@ $route['kredit-usaha-mikro'] = 'PinjamanController/pinjamanMurabahah';
 $route['kredit-modal-kerja-corporate'] = 'PinjamanController/pinjamanMusyarakah';
 $route['kredit-investasi'] = 'PinjamanController/pinjamanIjarah';
 
+// tambah data
+$route['kreditmodalkerjaumkm/tambah'] = 'PinjamanController/tambahMudharabah';
+
+
 // Angsuran
 $route['angsuran-kredit-modal-kerja-umkm'] = 'AngsuranController/angsuranMudharabah';
 $route['angsuran-kredit-usaha-mikro'] = 'AngsuranController/angsuranMurabahah';

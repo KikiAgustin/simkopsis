@@ -57,23 +57,24 @@ class PinjamanController extends GLOBAL_Controller
 		if (isset($_POST['tambah'])) {
 			$data = array(
 				'pinjaman_anggota_id' => parent::post('anggota'),
-				'pinjaman_jenis' => 'mudharobah',
+				'pinjaman_jenis' => 'modal-kerja-umkm',
 				'pinjaman_total' => parent::post('total-pinjam'),
 				'pinjaman_tenggat' => parent::post('tenggat-pinjam'),
-				'pinjaman_keterangan' => 'PINJAMAN MUDHARABAH : Mudharobah adalah akad kerjasama usaha antara pemilik dana sebagai pihak yang menyediakan modal dengan pihak pengelola modal, untuk diusahakan dengan bagi hasil (nisbah) sesuai dengan kesepakatan dimuka dari kedua belah pihak. Dalam hal ini akan memberikan 100% permodalan kepada pengusaha yang telah memiliki tenaga kerja dan keterampilan tetapi belum memiliki modal sama sekali.'
+				'pinjaman_status' => 'tunggu',
+				'pinjaman_keterangan' => 'KREDIT MODAL KERJA : Kredit Modal Kerja Adalah fasilitas kredit yang diberikan untuk memenuhi kebutuhan modal kerja yang habis dalam satu siklus usaha dan atau kebutuhan modal kerja yang bersifat khusus seperti untuk membiayai inventory / piutang / proyek atau kebutuhan khusus lainnya.'
 			);
 
 			$simpan = parent::model('PinjamanModel')->tambah($data);
 
 			if ($simpan > 0) {
 				parent::alert('alert', 'sukses_tambah');
-				redirect('pinjaman-mudharabah');
+				redirect('kredit-modal-kerja-umkm');
 			} else {
 				parent::alert('alert', 'gagal_tambah');
-				redirect('pinjaman-mudharabah');
+				redirect('kredit-modal-kerja-umkm');
 			}
 		} else {
-			$data['title'] = 'Tambah data pinjaman mudharabah';
+			$data['title'] = 'Tambah data Kredit Modal Kerja UMKM';
 
 			parent::template('pinjaman/tambahMudharabah', $data);
 		}
@@ -89,10 +90,10 @@ class PinjamanController extends GLOBAL_Controller
 
 		if ($update > 0) {
 			parent::alert('alert', 'sukses_setuju');
-			redirect(base_url());
+			redirect(base_url('kredit-modal-kerja-umkm'));
 		} else {
 			parent::alert('alert', 'gagal_setuju');
-			redirect(base_url());
+			redirect(base_url('kredit-modal-kerja-umkm'));
 		}
 	}
 
@@ -106,10 +107,10 @@ class PinjamanController extends GLOBAL_Controller
 
 		if ($update > 0) {
 			parent::alert('alert', 'sukses_tolak');
-			redirect(base_url());
+			redirect(base_url('kredit-modal-kerja-umkm'));
 		} else {
 			parent::alert('alert', 'gagal_tolak');
-			redirect(base_url());
+			redirect(base_url('kredit-modal-kerja-umkm'));
 		}
 	}
 }

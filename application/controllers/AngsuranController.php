@@ -39,17 +39,17 @@ class AngsuranController extends GLOBAL_Controller
 				$update = parent::model('PinjamanModel')->ubah($pinjamanId, $dataUpdate);
 				if ($update > 0) {
 					parent::alert('alert', 'sukses_tambah');
-					redirect('angsuran-mudharabah');
+					redirect('angsuran-kredit-modal-kerja-umkm');
 				} else {
 					parent::alert('alert', 'gagal_tambah');
-					redirect('angsuran-mudharabah');
+					redirect('angsuran-kredit-modal-kerja-umkm');
 				}
 			} else {
 				parent::alert('alert', 'gagal_tambah');
-				redirect('angsuran-mudharabah');
+				redirect('angsuran-kredit-modal-kerja-umkm');
 			}
 		} else {
-			$data['title'] = 'Data Kredit Modal Kerja UMKm';
+			$data['title'] = 'Data Kredit Modal Kerja UMKM';
 			$data['angsuran'] = parent::model('AngsuranModel')->lihat_semua();
 
 			parent::template('angsuran/mudharabah', $data);

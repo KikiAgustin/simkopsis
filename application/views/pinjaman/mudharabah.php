@@ -123,7 +123,7 @@ if ($this->session->userdata('level') == 'pengurus') :
 ?>
 	<!-- Floating Action Button -->
 	<div class="fixed-action-btn" style="bottom: 50px; right: 19px;">
-		<a href="<?= base_url('pinjaman-mudharabah/tambah') ?>" class="btn-floating btn-large teal modal-trigger">
+		<a href="<?= base_url('kreditmodalkerjaumkm/tambah') ?>" class="btn-floating btn-large teal modal-trigger">
 			<i class="mdi-av-playlist-add"></i>
 		</a>
 	</div>

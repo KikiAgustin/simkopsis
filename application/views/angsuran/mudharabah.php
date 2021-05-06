@@ -32,7 +32,7 @@
                     <?php
                     $no = 1;
                     foreach ($angsuran as $key => $value) :
-                        if ($value['jenis_pinjaman'] === 'mudharobah') :
+                        if ($value['pinjaman_jenis'] === 'modal-kerja-umkm') :
                     ?>
                             <tr>
                                 <td class="grey-text text-darken-1"><?= $no ?></td>
@@ -59,7 +59,7 @@
                             <div id="delete" class="modal">
                                 <div class="modal-content">
                                     <h4 class="red-text text-lighten-1">
-                                        <i class="mdi-action-info-outline"></i> Yakin ingin menghapus barang ?
+                                        <i class="mdi-action-info-outline"></i> Yakin ingin menghapus?
                                     </h4>
                                     <div class="modal-content">
                                         <h4>
@@ -97,7 +97,7 @@
     <div class="modal-content center">
         <div class="row">
             <div class="col s12 m12 center">
-                <h5 class="more-text">tambah data angsuran pinjaman mudharabah</h5>
+                <h5 class="more-text">tambah data angsuran Kredit Modal Kerja UMKM</h5>
                 <h5 class="divider"></h5>
             </div>
 
@@ -110,7 +110,7 @@
                 <input id="search-anggota" type="text" class="validate custom-box-search" name="anggota-form" required placeholder="ketikkan nama anggota">
                 <input type="text" name="anggota" id="id-anggota" hidden>
                 <!--set jenis simpanan directly-->
-                <input type="text" name="jenis" value="amanah" hidden>
+                <input type="text" name="jenis" value="modal-kerja-umkm" hidden>
             </div>
 
             <div class="input-field col s12 m12">
