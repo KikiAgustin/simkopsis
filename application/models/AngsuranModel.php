@@ -21,5 +21,4 @@ class AngsuranModel extends GLOBAL_Model
 	{
 		return parent::insert_with_status('simkopsis_angsuran', $data);
 	}
-
 }

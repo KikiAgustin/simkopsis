@@ -52,6 +52,7 @@ class AngsuranController extends GLOBAL_Controller
 			$data['title'] = 'Data Kredit Modal Kerja UMKM';
 			$data['angsuran'] = parent::model('AngsuranModel')->lihat_semua();
 
+
 			parent::template('angsuran/mudharabah', $data);
 		}
 	}
