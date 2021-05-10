@@ -97,7 +97,7 @@
     <div class="modal-content center">
         <div class="row">
             <div class="col s12 m12 center">
-                <h5 class="more-text">tambah data angsuran pinjaman ijarah</h5>
+                <h5 class="more-text">tambah data angsuran Kredit Investasi</h5>
                 <h5 class="divider"></h5>
             </div>
 

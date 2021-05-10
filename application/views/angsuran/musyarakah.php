@@ -32,7 +32,7 @@
                     <?php
                     $no = 1;
                     foreach ($musyarakah as $key => $value) :
-                        if ($value['jenis_pinjaman'] === 'musyarakah') :
+                        if ($value['pinjaman_jenis'] === 'musyarakah') :
                     ?>
                             <tr>
                                 <td class="grey-text text-darken-1"><?= $no ?></td>
@@ -97,7 +97,7 @@
     <div class="modal-content center">
         <div class="row">
             <div class="col s12 m12 center">
-                <h5 class="more-text">tambah data angsuran pinjaman musyarakah</h5>
+                <h5 class="more-text">tambah data angsuran Kredit Modal Kerja Corporate</h5>
                 <h5 class="divider"></h5>
             </div>
 
