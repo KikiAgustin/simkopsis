@@ -1,7 +1,6 @@
 <!-- ======= About Lists Section ======= -->
 <section class="about-lists">
     <div class="container">
-
         <div class="row no-gutters">
 
             <?php $i = 1; ?>

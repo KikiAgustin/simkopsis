@@ -47,7 +47,7 @@
 
                     <?= form_error('password', '<p style="color: red;">', '</p>'); ?>
                     <div class="wrap-input100 validate-input" data-validate="Password wajib diisi">
-                        <input class="input100" type="password" name="pass" placeholder="Password">
+                        <input class="input100" type="password" name="password" placeholder="Password">
                         <span class="focus-input100"></span>
                     </div>
 
