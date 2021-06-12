@@ -36,7 +36,20 @@
                         <li><a class="dropdown-item" href="<?= base_url('PengajuanPinjaman'); ?>">pengajuan Pinjman</a></li>
                     </ul>
                 </li>
-                <li><a class="getstarted scrollto" href="<?= base_url('Auth'); ?>">Login</a></li>
+                <?php if ($this->session->userdata('email')) : ?>
+                    <?php $cekAnggota = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array(); ?>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle getstarted scrollto" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <?= $cekAnggota['name']; ?>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="<?= base_url('Profile'); ?>">Profile</a></li>
+                            <li><a class="dropdown-item" href="<?= base_url('Auth/logout'); ?>">Logout</a></li>
+                        </ul>
+                    </li>
+                <?php else : ?>
+                    <li><a class="getstarted scrollto" href="<?= base_url('Auth'); ?>">Login</a></li>
+                <?php endif; ?>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->

@@ -5,6 +5,10 @@ class Auth extends CI_Controller
 {
     public function index()
     {
+        if ($this->session->userdata('email')) {
+            redirect('Home');
+        }
+
         $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email', [
             'required' => 'Kolom ini wajib diisi',
             'valid_email' => 'Email tidak valid'
@@ -97,5 +101,15 @@ class Auth extends CI_Controller
             $this->session->set_flashdata('message', '<h3 style="text-align: center; margin-top: 20px;">Selamat Registrasi Anda Berhasil</h3>');
             redirect('Auth');
         }
+    }
+
+
+    public function logout()
+    {
+
+        $this->session->unset_userdata('email');
+
+        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert" >Anda berhasil Keluar!</div>');
+        redirect('Auth');
     }
 }
