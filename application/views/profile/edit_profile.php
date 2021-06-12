@@ -27,7 +27,7 @@
                         <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label>
                         <select name="jenis_kelamin" class="form-select" aria-label="Default select example" required>
                             <option value="">Pilih</option>
-                            <option value="laki-laki">laki-laki</option>
+                            <option value="Laki-laki">Laki-laki</option>
                             <option value="Perempuan">Perempuan</option>
                         </select>
                     </div>

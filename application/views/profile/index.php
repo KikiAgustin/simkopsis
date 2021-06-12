@@ -10,51 +10,47 @@
         <?php if ($anggota) : ?>
             <div class="row mb-3">
                 <div class="col-lg-2 ">NIK</div>
-                <div class="col-lg-9">3204352903888098</div>
+                <div class="col-lg-9"><?= $anggota["anggota_nik"]; ?></div>
             </div>
             <div class="row mb-3">
                 <div class="col-lg-2">Nama</div>
-                <div class="col-lg-9">Kiki Agustin</div>
+                <div class="col-lg-9"><?= $anggota["anggota_nama"]; ?></div>
             </div>
             <div class="row mb-3">
                 <div class="col-lg-2">Email</div>
-                <div class="col-lg-9">kikiagustin62@gmail.com</div>
+                <div class="col-lg-9"><?= $anggota["anggota_email"]; ?></div>
             </div>
             <div class="row mb-3">
                 <div class="col-lg-2">Tempat Lahir</div>
-                <div class="col-lg-9">Bandung</div>
+                <div class="col-lg-9"><?= $anggota["anggota_tempat_lahir"]; ?></div>
             </div>
             <div class="row mb-3">
                 <div class="col-lg-2">Tanggal Lahir</div>
-                <div class="col-lg-9">31 January 1999</div>
+                <div class="col-lg-9"><?= $anggota["anggota_tanggal_lahir"]; ?></div>
             </div>
             <div class="row mb-3">
                 <div class="col-lg-2">Agama</div>
-                <div class="col-lg-9">Islam</div>
+                <div class="col-lg-9"><?= $anggota["anggota_agama"]; ?></div>
             </div>
             <div class="row mb-3">
                 <div class="col-lg-2">Nama Ibu Kandung</div>
-                <div class="col-lg-9">Popon</div>
+                <div class="col-lg-9"><?= $anggota["anggota_nama_ibu"]; ?></div>
             </div>
             <div class="row mb-3">
                 <div class="col-lg-2">Pekerjaan</div>
-                <div class="col-lg-9">Pelajar</div>
+                <div class="col-lg-9"><?= $anggota["anggota_pekerjaan"]; ?></div>
             </div>
             <div class="row mb-3">
                 <div class="col-lg-2">Status</div>
-                <div class="col-lg-9">lajang</div>
+                <div class="col-lg-9"><?= $anggota["anggota_status_kawin"]; ?></div>
             </div>
             <div class="row mb-3">
                 <div class="col-lg-2">Telepon</div>
-                <div class="col-lg-9">085789885886</div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-lg-2">Pendapatan Perbulan</div>
-                <div class="col-lg-9">10.000.000</div>
+                <div class="col-lg-9"><?= $anggota["anggota_nomor_hp"]; ?></div>
             </div>
             <div class="row mb-3">
                 <div class="col-lg-2">Alamat</div>
-                <div class="col-lg-9">Kota Baru Parahyangan Blok. A No. 10 Bandung Barat Jawa Barat</div>
+                <div class="col-lg-9"><?= $anggota["anggota_alamat"]; ?></div>
             </div>
         <?php else : ?>
             <p class="text-danger">Kamu belum melengkapi profile, silahkan lengkapi profile untuk pengajuan pembukaan rekening dan pinjaman</p>

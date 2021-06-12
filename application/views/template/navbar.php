@@ -32,8 +32,15 @@
                         Aksi
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="<?= base_url('BukaRekening'); ?>">Buka Rekening Baru</a></li>
-                        <li><a class="dropdown-item" href="<?= base_url('PengajuanPinjaman'); ?>">pengajuan Pinjman</a></li>
+                        <?php $anggota = $this->db->get_where('simkopsis_anggota', ['anggota_email' => $this->session->userdata('email')])->row_array(); ?>
+                        <?php $rekening = $this->db->get_where('tbl_pembukaan_rekening', ['id_anggota' => $anggota['anggota_id']])->row_array();  ?>
+
+                        <?php if ($rekening) : ?>
+                            <li><a class="dropdown-item" href="<?= base_url('BukaRekening/Status'); ?>">Informasi Rekening</a></li>
+                        <?php else : ?>
+                            <li><a class="dropdown-item" href="<?= base_url('BukaRekening'); ?>">Buka Rekening Baru</a></li>
+                        <?php endif; ?>
+                        <li><a class="dropdown-item" href="<?= base_url('PengajuanPinjaman'); ?>">pengajuan Pinjaman</a></li>
                     </ul>
                 </li>
                 <?php if ($this->session->userdata('email')) : ?>
