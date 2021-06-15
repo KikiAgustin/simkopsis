@@ -11,7 +11,6 @@
             <b style="color: #32aedb;"> Fasilitas :</b>
             <div class="pl-3 mb-5">
                 <ul>
-                    <li>Tersedia dalam mata uang Rupiah dan US Dollar</li>
                     <li>Dilengkapi dengan Kartu Mandiri Debit dan Layanan e-Banking Mandiri : SMS Banking, Internet Banking, Mandiri Call.</li>
                     <li>Gratis biaya transfer dana antar rekening Bank Mandiri secara otomatis.</li>
                     <li>Buku Tabungan dilengkapi deskripsi dan keterangan transaksi yang lebih jelas dan lengkap, contoh</li>
@@ -22,9 +21,9 @@
             <b style="color: #32aedb;"> Syarat Dan Ketentuan :</b>
             <div class="pl-3 mb-5 ">
                 <ul>
-                    <li> Setoran awal Rp. 1.000.000,-</li>
-                    <li> Saldo minimum akhir bulan Rp. 10.000.000,-</li>
-                    <li>Saldo ditahan Rp. 10.000,-</li>
+                    <li> Setoran awal 1 juta</li>
+                    <li> Saldo minimum akhir bulan 10 Juta</li>
+                    <li>Saldo ditahan 10 ribu</li>
                     <li>
                         Pemilik Rekening
                         <br>
@@ -76,4 +75,135 @@
 
         </div>
     </div>
+
+    <h3 class="fw-bold text-center">Biaya Dan Limit</h3>
+
+    <br><br>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <h3 class="fw-bold">ATM</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Jenis Transaksi</th>
+                        <th scope="col">Mandiri Debi Bisnis Gold</th>
+                        <th scope="col">Mandiri Debit Bisnis Platinum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tarik Tunai</td>
+                        <td>Rp 10.000.000</td>
+                        <td>Rp 10.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Transfer antar Rekening Bank Mandiri</td>
+                        <td>Rp 100.000.000</td>
+                        <td>Rp 200.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Transfer ke Rekening Bank lain</td>
+                        <td>Rp 25.000.000</td>
+                        <td>Rp 25.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Pembayaran Tagihan / Pembelian</td>
+                        <td>Rp 100.000.000</td>
+                        <td>Rp 100.000.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+
+
+    <br><br>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <h3 class="fw-bold">EDC</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Jenis Transaksi</th>
+                        <th scope="col">Mandiri Debi Bisnis Gold</th>
+                        <th scope="col">Mandiri Debit Bisnis Platinum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tarik Tunai di Merchant / EDC</td>
+                        <td>Rp 1.000.000</td>
+                        <td>Rp 1.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Belanja di Merchant</td>
+                        <td>Rp 100.000.000</td>
+                        <td>Rp 200.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Pembayaran Tagihan / Pembelian</td>
+                        <td>Rp 100.000.000</td>
+                        <td>Rp 100.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Top Up Mandiri Prabayar</td>
+                        <td>Rp 10.000.000</td>
+                        <td>Rp 10.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Limit Setoran harian</td>
+                        <td>Rp 100.000.000</td>
+                        <td>Rp 100.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Jumlah Lembar Setoran Transaksi</td>
+                        <td>Maks 50 lembar</td>
+                        <td>Maks 50 lembar</td>
+                    </tr>
+                    <tr>
+                        <td>Denominasi Setoran</td>
+                        <td>Rp 50.000</td>
+                        <td>Rp 100.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+
+
+    <br><br>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <h3 class="fw-bold">Biaya</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Jenis Transaksi</th>
+                        <th scope="col">Mandiri Debi Bisnis Gold</th>
+                        <th scope="col">Mandiri Debit Bisnis Platinum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Biaya Administrasi Kartu per Bulan</td>
+                        <td>Rp 5.000</td>
+                        <td>Rp 10.000</td>
+                    </tr>
+                    <tr>
+                        <td>Biaya Administrasi Kartu karena hilang/rusak</td>
+                        <td>Rp 15.000</td>
+                        <td>Rp 15.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+
+
 </section>

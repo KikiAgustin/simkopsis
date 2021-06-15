@@ -22,7 +22,7 @@
                     <li>Dokumen legalitas usaha, misalnya : NPWP, SIUP, SITU, TDP atau SKDU</li>
                 </ul>
             </div>
-
+            <a class="btn btn-primary" href="<?= base_url('PengajuanPinjaman/ModalKerja'); ?>">Ajukan Pinjaman</a>
         </div>
     </div>
 </section>

@@ -34,12 +34,8 @@
                         <label for="jenis_kartu" class="form-label">Pilih Jenis Kartu</label>
                         <select name="jenis_kartu" class="form-select" aria-label="Default select example" required>
                             <option value="">Pilih</option>
-                            <option value="Silver GPN">Silver GPN</option>
-                            <option value="Gold GPN">Gold GPN</option>
-                            <option value="Platinum GPN">Platinum GPN</option>
-                            <option value="Silver Visa">Silver Visa</option>
-                            <option value="Gold Visa">Gold Visa</option>
-                            <option value="Platinum Visa">Platinum Visa</option>
+                            <option value="BANKKU Debit Bisnis Gold">BANKKU Debit Bisnis Gold</option>
+                            <option value="BANKKU Debit Bisnis Platinum">BANKKU Debit Bisnis Platinum</option>
                         </select>
                     </div>
                 </div>
