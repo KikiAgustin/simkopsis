@@ -44,6 +44,7 @@ class PengajuanPinjaman extends CI_Controller
         $email = $this->session->userdata('email');
         $getUser = $this->db->get_where('user', ['email' => "$email"])->row_array();
         $anggota = $this->db->get_where('simkopsis_anggota', ['anggota_email' => "$email"])->row_array();
+        $cekPinjaman = $this->db->get_where('tbl_data_pinjaman', ['id_anggota' => $anggota['anggota_id'], 'status' => 0])->row_array();
 
         $tanggal_lahir = $anggota['anggota_tanggal_lahir'];
 
@@ -59,6 +60,8 @@ class PengajuanPinjaman extends CI_Controller
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>');
             redirect('Profile');
+        } else if ($cekPinjaman) {
+            redirect('PengajuanPinjaman/detailPinjaman');
         }
 
         $data = [
@@ -99,11 +102,13 @@ class PengajuanPinjaman extends CI_Controller
         $email = $this->session->userdata('email');
         $getUser = $this->db->get_where('user', ['email' => "$email"])->row_array();
         $anggota = $this->db->get_where('simkopsis_anggota', ['anggota_email' => "$email"])->row_array();
+        $cekPinjaman = $this->db->get_where('tbl_data_pinjaman', ['id_anggota' => $anggota['anggota_id'], 'status' => 0])->row_array();
 
         $data = [
             "judul" => "BANKKU | Detail Pinjaman",
             "anggota"   => $anggota,
-            "user"      => $getUser
+            "user"      => $getUser,
+            "pinjaman"  => $cekPinjaman
         ];
 
         $this->load->view('template/header', $data);
