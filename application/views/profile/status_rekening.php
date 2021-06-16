@@ -27,6 +27,9 @@
         <?php if ($rekening["status"] == 0) : ?>
             <br>
             <p class="text-danger">Silahkan datang ke kantor BANNKU cabang terdekat, untuk pengambilan kartu dan buku tabungan dengan membawa katu identitas</p>
+        <?php elseif ($rekening["status"] == 1) : ?>
+            <br>
+            <p class="text-primary">Terimakasih telah menggunakan layanan dari BANKKU</p>
         <?php elseif ($rekening["status"] == 2) : ?>
             <br>
             <p class="text-danger">Kartu Rekening Kamu sudah tidak aktif, silahkan datang ke kantor BANNKU terderkat untuk mengaktifkan kembali</p>

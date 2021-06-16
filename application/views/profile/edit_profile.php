@@ -18,7 +18,7 @@
                 <div class="col-sm-12">
                     <div class="mb-3">
                         <label for="nik" class="form-label">NIK</label>
-                        <input type="number" name="nik" class="form-control" id="nik" placeholder="NIK" required>
+                        <input type="number" name="nik" class="form-control" id="nik" placeholder="NIK" required value="<?= set_value('nik'); ?>">
                         <?= form_error('nik', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
                 </div>
@@ -35,13 +35,13 @@
                 <div class="col-sm-12">
                     <div class="mb-3">
                         <label for="tempat_lahir" class="form-label">Tempat Lahir</label>
-                        <input type="text" name="tempat_lahir" class="form-control" id="tempat_lahir" placeholder="Tempat Lahir" required>
+                        <input type="text" name="tempat_lahir" class="form-control" id="tempat_lahir" placeholder="Tempat Lahir" required value="<?= set_value('tempat_lahir'); ?>">
                     </div>
                 </div>
                 <div class="col-sm-12">
                     <div class="mb-3">
                         <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
-                        <input type="date" name="tanggal_lahir" class="form-control" id="tanggal_lahir" placeholder="Tanggal Lahir" required>
+                        <input type="date" name="tanggal_lahir" class="form-control" id="tanggal_lahir" placeholder="Tanggal Lahir" required value="<?= set_value('tanggal_lahir'); ?>">
                     </div>
                 </div>
                 <div class="col-sm-12">
@@ -61,25 +61,25 @@
                 <div class="col-sm-12">
                     <div class="mb-3">
                         <label for="nama_ibu" class="form-label">Nama Ibu Kandung</label>
-                        <input type="text" name="nama_ibu" class="form-control" id="nama_ibu" placeholder="Nama Ibu Kandung" required>
+                        <input type="text" name="nama_ibu" class="form-control" id="nama_ibu" placeholder="Nama Ibu Kandung" required value="<?= set_value('nama_ibu'); ?>">
                     </div>
                 </div>
                 <div class="col-sm-12">
                     <div class="mb-3">
                         <label for="alamat" class="form-label">Alamat Lengkap</label>
-                        <textarea class="form-control" name="alamat" id="alamat" rows="3"></textarea>
+                        <textarea class="form-control" name="alamat" id="alamat" rows="3"><?= set_value('alamat'); ?></textarea>
                     </div>
                 </div>
                 <div class="col-sm-12">
                     <div class="mb-3">
                         <label for="pekerjaan" class="form-label">Pekerjaan</label>
-                        <input type="text" name="pekerjaan" class="form-control" id="pekerjaan" placeholder="Pekerjaan" required>
+                        <input type="text" name="pekerjaan" class="form-control" id="pekerjaan" placeholder="Pekerjaan" required value="<?= set_value('pekerjaan'); ?>">
                     </div>
                 </div>
                 <div class="col-sm-12">
                     <div class="mb-3">
                         <label for="pendidikan" class="form-label">Pendidikan</label>
-                        <input type="text" name="pendidikan" class="form-control" id="pendidikan" placeholder="Pendidikan" required>
+                        <input type="text" name="pendidikan" class="form-control" id="pendidikan" placeholder="Pendidikan" required value="<?= set_value('pendidikan'); ?>">
                     </div>
                 </div>
                 <div class="col-sm-12">
@@ -97,7 +97,7 @@
                 <div class="col-sm-12">
                     <div class="mb-3">
                         <label for="telepon" class="form-label">Telepon</label>
-                        <input type="number" name="telepon" class="form-control" id="telepon" placeholder="Telepon" required>
+                        <input type="number" name="telepon" class="form-control" id="telepon" placeholder="Telepon" required value="<?= set_value('telepon'); ?>">
                     </div>
                 </div>
                 <button type="submit" name="submit" class="btn btn-primary">Edit profile</button>

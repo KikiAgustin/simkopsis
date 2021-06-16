@@ -37,6 +37,8 @@ class AnggotaController extends GLOBAL_Controller
 		);
 		$data['pinjaman'] = parent::model('AnggotaModel')->lihat_pinjaman($queryPinjaman)->result_array();
 
+		$data['ktp'] = $this->db->get_where('tbl_pembukaan_rekening', ['id_anggota' => $id])->row_array();
+
 		parent::template('anggota/detail', $data);
 	}
 
@@ -165,5 +167,94 @@ class AnggotaController extends GLOBAL_Controller
 			parent::alert('alert', 'gagal_hapus');
 			redirect('anggota');
 		}
+	}
+
+
+	public function pembukaanRekening()
+	{
+		$anggota = $this->db->get('tbl_pembukaan_rekening')->result_array();
+		$data = [
+			'title'			=> 'Data pembukaan rekening baru',
+			'anggota'		=> $anggota
+
+		];
+
+		parent::template('anggota/pembukaan_rekening', $data);
+	}
+
+	public function expire($id)
+	{
+
+		$this->db->set('status', 2);
+		$this->db->where('id_anggota', $id);
+		$this->db->update('tbl_pembukaan_rekening');
+		parent::alert('alert', 'sukses_hapus');
+		redirect('AnggotaController/pembukaanRekening');
+	}
+
+	public function done($id)
+	{
+		$this->db->set('status', 1);
+		$this->db->where('id_anggota', $id);
+		$this->db->update('tbl_pembukaan_rekening');
+		parent::alert('alert', 'sukses_hapus');
+		redirect('AnggotaController/pembukaanRekening');
+	}
+	public function terima($id)
+	{
+		// Update data anggota
+		$dokumen = '{"ktp":"IMG_20180912_123840.jpg"}';
+		$this->db->set('anggota_dokumen', $dokumen);
+		$this->db->where('anggota_id', $id);
+		$this->db->update('simkopsis_anggota');
+
+		// Update data peminjaman
+		$this->db->set('persetujuan', 1);
+		$this->db->where('id_anggota', $id);
+		$this->db->update('tbl_data_pinjaman');
+		parent::alert('alert', 'sukses_hapus');
+		redirect('AnggotaController/pengajuanPinjaman');
+	}
+
+	public function tolak($id)
+	{
+		$this->db->set('persetujuan', 2);
+		$this->db->where('id_anggota', $id);
+		$this->db->update('tbl_data_pinjaman');
+		parent::alert('alert', 'sukses_hapus');
+		redirect('AnggotaController/pengajuanPinjaman');
+	}
+
+	public function pengajuanPinjaman()
+	{
+		$anggota = $this->db->get('tbl_data_pinjaman')->result_array();
+		$data = [
+			'title'			=> 'Data pengajuan pinjaman nasabah',
+			'anggota'		=> $anggota
+
+		];
+
+		parent::template('anggota/pengajuan_pinjaman', $data);
+	}
+
+	public function dokumen($id)
+	{
+		$data['title'] = 'Dokumen Pengajuan ';
+		$query = array(
+			'anggota_id' => $id
+		);
+		$data['anggota'] = parent::model('AnggotaModel')->lihat_anggota($query);
+		$querySimpanan = array(
+			'simpanan_anggota_id' => $id
+		);
+		$data['simpanan'] = parent::model('AnggotaModel')->lihat_simpanan($querySimpanan)->result_array();
+		$queryPinjaman = array(
+			'pinjaman_anggota_id' => $id
+		);
+		$data['pinjaman'] = parent::model('AnggotaModel')->lihat_pinjaman($queryPinjaman)->result_array();
+
+		$data['dokumen'] = $this->db->get_where('tbl_persyaratan', ['id_anggota' => $id])->row_array();
+
+		parent::template('anggota/dokumen', $data);
 	}
 }

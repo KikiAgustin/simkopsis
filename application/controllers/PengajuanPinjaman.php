@@ -85,6 +85,7 @@ class PengajuanPinjaman extends CI_Controller
 
             $data = [
                 'id_anggota'        => $anggota['anggota_id'],
+                'nama'              => $anggota['anggota_nama'],
                 'email'             => $anggota['anggota_email'],
                 'jenis_pinjaman'    => "Kredit Modal Kerja",
                 'jumlah_pinjaman'   => $jumlah_pinjaman,
@@ -110,17 +111,23 @@ class PengajuanPinjaman extends CI_Controller
         if ($jenis_angsuran == "Kredit Usaha Mikro") {
             if ($cekAngsuran == 1) {
                 $jumlah_angsuran = 12;
+                $bayar = " Tahun";
             } elseif ($cekAngsuran == 2) {
                 $jumlah_angsuran = 24;
+                $bayar = " Tahun";
             } elseif ($cekAngsuran == 3) {
                 $jumlah_angsuran = 36;
+                $bayar = " Tahun";
             } elseif ($cekAngsuran == 4) {
                 $jumlah_angsuran = 48;
+                $bayar = " Tahun";
             } else {
                 $jumlah_angsuran = 50;
+                $bayar = " Tahun";
             }
         } else {
             $jumlah_angsuran = $cekPinjaman['jumlah_angsuran'];
+            $bayar = " Bulan";
         }
 
         if (!$cekPinjaman) {
@@ -138,7 +145,8 @@ class PengajuanPinjaman extends CI_Controller
             "user"              => $getUser,
             "pinjaman"          => $cekPinjaman,
             "persyaratan"       => $persyaratan,
-            "jumlah_angsuran"   => $jumlah_angsuran
+            "jumlah_angsuran"   => $jumlah_angsuran,
+            "bayar"             => $bayar
         ];
 
         $this->load->view('template/header', $data);
@@ -253,6 +261,7 @@ class PengajuanPinjaman extends CI_Controller
 
             $data = [
                 'id_anggota'        => $anggota['anggota_id'],
+                'nama'              => $anggota['anggota_nama'],
                 'email'             => $anggota['anggota_email'],
                 'jenis_pinjaman'    => "Kredit Usaha Mikro",
                 'jumlah_pinjaman'   => $jumlah_pinjaman,

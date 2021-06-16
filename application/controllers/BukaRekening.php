@@ -55,6 +55,7 @@ class BukaRekening extends CI_Controller
 
             $data = [
                 "id_anggota"        => $anggota["anggota_id"],
+                "nama"              => $anggota["anggota_nama"],
                 "jenis_rekening"    => $jenis_rekening,
                 "jenis_kartu"       => $jenis_kartu,
                 "tujuan"            => $tujuan_buka_rekening,

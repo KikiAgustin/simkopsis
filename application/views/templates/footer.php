@@ -177,6 +177,22 @@
                                     className: 'mdl-data-table__cell--non-numeric'
                                 }]
                             });
+
+                            $('#pembukaan-table').DataTable({
+                                "order": [
+                                    [5, "desc"]
+                                ],
+                                "pageLength": 10,
+                                language: {
+                                    url: baseURL + '/assets/js/plugins/dtables/indonesia.json'
+                                },
+                                columnDefs: [{
+                                    targets: [0, 1, 2],
+                                    className: 'mdl-data-table__cell--non-numeric'
+                                }]
+                            });
+
+
                         });
                     </script>
                     </body>

@@ -105,12 +105,12 @@
                     </li>
 
                     <li class="bold">
-                        <a href="<?= base_url('PembukaanController/index') ?>" class="waves-effect waves-cyan">
+                        <a href="<?= base_url('AnggotaController/pembukaanRekening') ?>" class="waves-effect waves-cyan">
                             <i class="mdi-action-credit-card"></i> Pembukaan Rekening Baru
                         </a>
                     </li>
                     <li class="bold">
-                        <a href="<?= base_url('anggota') ?>" class="waves-effect waves-cyan">
+                        <a href="<?= base_url('AnggotaController/pengajuanPinjaman') ?>" class="waves-effect waves-cyan">
                             <i class="mdi-action-input"></i> Pengajuan Pinjaman
                         </a>
                     </li>

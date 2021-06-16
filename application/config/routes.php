@@ -55,6 +55,11 @@ $route['anggota'] = 'AnggotaController';
 $route['anggota/tambah'] = 'AnggotaController/tambah';
 $route['anggota/ubah/(:any)'] = 'AnggotaController/ubah/$1';
 $route['anggota/hapus/(:any)'] = 'AnggotaController/hapus/$1';
+$route['anggota/expire/(:any)'] = 'AnggotaController/expire/$1';
+$route['anggota/done/(:any)'] = 'AnggotaController/done/$1';
+$route['anggota/terima/(:any)'] = 'AnggotaController/terima/$1';
+$route['anggota/tolak/(:any)'] = 'AnggotaController/tolak/$1';
+$route['anggota/dokumen/(:any)'] = 'AnggotaController/dokumen/$1';
 $route['anggota/(:any)'] = 'AnggotaController/detail/$1';
 
 

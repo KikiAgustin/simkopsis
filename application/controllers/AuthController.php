@@ -23,7 +23,7 @@ class AuthController extends GLOBAL_Controller
 	public function login()
 	{
 		if (parent::hasLogin()) {
-			redirect(base_url());
+			redirect(base_url('AdminController'));
 		} else {
 			if (isset($_POST['login'])) {
 				$username = parent::post('username');

@@ -92,7 +92,7 @@ class Auth extends CI_Controller
                 'image' => "default.png",
                 'password' => $password,
                 'date_created' => time(),
-                'is_active' => 0,
+                'is_active' => 1,
                 'role_id' => 2
             ];
 

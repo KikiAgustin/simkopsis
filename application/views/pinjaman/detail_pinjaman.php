@@ -23,12 +23,7 @@
             <div class="row mb-3">
                 <div class="col-lg-2">Jumlah Angsuran</div>
                 <div class="col-lg-10">
-                    <?= $pinjaman['jumlah_angsuran']; ?>
-                    <?php if ($pinjaman['jenis_pinjaman'] = "Kredit Usaha Mikro") : ?>
-                        Tahun
-                    <?php else : ?>
-                        Bulan
-                    <?php endif; ?>
+                    <?= $pinjaman['jumlah_angsuran'] . $bayar; ?>
                 </div>
             </div>
             <div class="row mb-3">
@@ -79,12 +74,7 @@
             </div>
             <div class="row mb-3">
                 <div class="col-lg-2">Jumlah Angsuran</div>
-                <div class="col-lg-10"><?= $pinjaman['jumlah_angsuran']; ?>
-                    <?php if ($pinjaman['jenis_pinjaman'] = "Kredit Usaha Mikro") : ?>
-                        Tahun
-                    <?php else : ?>
-                        Bulan
-                    <?php endif; ?>
+                <div class="col-lg-10"><?= $pinjaman['jumlah_angsuran'] . $bayar; ?>
                 </div>
             </div>
             <div class="row mb-3">
@@ -114,12 +104,7 @@
             <div class="row mb-3">
                 <div class="col-lg-2">Jumlah Angsuran</div>
                 <div class="col-lg-10">
-                    <?= $pinjaman['jumlah_angsuran']; ?>
-                    <?php if ($pinjaman['jenis_pinjaman'] = "Kredit Usaha Mikro") : ?>
-                        Tahun
-                    <?php else : ?>
-                        Bulan
-                    <?php endif; ?>
+                    <?= $pinjaman['jumlah_angsuran'] . $bayar; ?>
                 </div>
             </div>
             <div class="row mb-3">
