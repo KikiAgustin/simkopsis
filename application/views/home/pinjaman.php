@@ -1,6 +1,7 @@
 <!-- ======= About Lists Section ======= -->
 <section class="about-lists">
     <div class="container">
+        <?= $this->session->flashdata('message'); ?>
         <div class="row no-gutters">
 
             <?php $i = 1; ?>

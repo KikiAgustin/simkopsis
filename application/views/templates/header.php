@@ -105,6 +105,16 @@
                     </li>
 
                     <li class="bold">
+                        <a href="<?= base_url('PembukaanController/index') ?>" class="waves-effect waves-cyan">
+                            <i class="mdi-action-credit-card"></i> Pembukaan Rekening Baru
+                        </a>
+                    </li>
+                    <li class="bold">
+                        <a href="<?= base_url('anggota') ?>" class="waves-effect waves-cyan">
+                            <i class="mdi-action-input"></i> Pengajuan Pinjaman
+                        </a>
+                    </li>
+                    <li class="bold">
                         <a href="<?= base_url('anggota') ?>" class="waves-effect waves-cyan">
                             <i class="mdi-social-people"></i> Anggota
                         </a>
@@ -140,10 +150,6 @@
                                         </li>
                                         <li><a href="<?= base_url('kredit-usaha-mikro') ?>">Kredit Usaha Mikro</a>
                                         </li>
-                                        <li><a href="<?= base_url('kredit-modal-kerja-corporate') ?>">Kredit Modal Kerja</a>
-                                        </li>
-                                        <li><a href="<?= base_url('kredit-investasi') ?>">Kredit Investasi</a>
-                                        </li>
                                     </ul>
                                 </div>
                             </li>
@@ -162,37 +168,12 @@
                                         </li>
                                         <li><a href="<?= base_url('angsuran-kredit-usaha-mikro') ?>">Kredit Usaha Mikro</a>
                                         </li>
-                                        <li><a href="<?= base_url('angsuran-kredit-modal-kerja-corporate') ?>">Kredit Modal Kerja</a>
-                                        </li>
-                                        <li><a href="<?= base_url('angsuran-kredit-investasi') ?>">Kredit investasi</a>
-                                        </li>
                                     </ul>
                                 </div>
                             </li>
                         </ul>
                     </li>
 
-                    <!-- <li class="no-padding">
-                        <ul class="collapsible collapsible-accordion">
-                            <li class="bold">
-                                <a class="collapsible-header waves-effect waves-cyan">
-                                    <i class="mdi-action-book"></i> Laporan
-                                </a>
-                                <div class="collapsible-body">
-                                    <ul>
-                                        <li><a href="<?= base_url('laporan-anggota') ?>">Buku Anggota</a>
-                                        </li>
-                                        <li><a href="<?= base_url('laporan-simpanan') ?>">Daftar Simpanan</a>
-                                        </li>
-                                        <li><a href="<?= base_url('laporan-pinjaman') ?>">Daftar Pinjaman</a>
-                                        </li>
-                                        <li><a href="<?= base_url('laporan-tagihan-koperasi') ?>">Daftar Tagihan</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </li> -->
 
                     <li class="li-hover">
                         <div class="divider"></div>

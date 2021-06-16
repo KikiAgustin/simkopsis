@@ -37,10 +37,10 @@
 
                         <?php if ($rekening) : ?>
                             <li><a class="dropdown-item" href="<?= base_url('BukaRekening/Status'); ?>">Informasi Rekening</a></li>
+                            <li><a class="dropdown-item" href="<?= base_url('PengajuanPinjaman/detailPinjaman'); ?>">Informasi Pinjaman</a></li>
                         <?php else : ?>
                             <li><a class="dropdown-item" href="<?= base_url('BukaRekening'); ?>">Buka Rekening Baru</a></li>
                         <?php endif; ?>
-                        <li><a class="dropdown-item" href="<?= base_url('PengajuanPinjaman'); ?>">pengajuan Pinjaman</a></li>
                     </ul>
                 </li>
                 <?php if ($this->session->userdata('email')) : ?>

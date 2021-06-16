@@ -78,6 +78,9 @@ $route['angsuran-kredit-usaha-mikro'] = 'AngsuranController/angsuranMurabahah';
 $route['angsuran-kredit-modal-kerja-corporate'] = 'AngsuranController/angsuranMusyarakah';
 $route['angsuran-kredit-investasi'] = 'AngsuranController/angsuranIjarah';
 
+// Pembukaan Rekening
+$route['pembukaanRekeningBaru'] = 'PembukaanController';
+
 
 
 // Modul Dasboard

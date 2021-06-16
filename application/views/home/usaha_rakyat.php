@@ -39,6 +39,7 @@
                     <li>Copy buku Mandiri Tabungan atau Mandiri TabunganMU atas nama Calon Debitur</li>
                 </ul>
             </div>
+            <a class="btn btn-primary" href="<?= base_url('PengajuanPinjaman/UsahaMikro'); ?>">Ajukan Pinjaman</a>
 
         </div>
     </div>
