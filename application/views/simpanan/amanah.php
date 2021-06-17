@@ -45,7 +45,7 @@
                                 <td class="grey-text text-darken-1">
                                     <?= $value['simpanan_date_created'] ?>
                                 </td>
-                                <td class="grey-text text-darken-1"><?= $value['simpanan_total'] ?></td>
+                                <td class="grey-text text-darken-1"><?= number_format($value['simpanan_total']); ?></td>
                                 <td>
                                     <div class="row">
                                         <a href="#" class="btn-flat waves-effect waves-orange col l6 center" title="ubah data">

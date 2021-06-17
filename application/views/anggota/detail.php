@@ -81,7 +81,7 @@
                                         </div>
                                         <div class="col s3 m3">
                                             <span class="orange-text">
-                                                Rp. <?= $value['simpanan_total'] ?>
+                                                Rp. <?= number_format($value['simpanan_total']); ?>
                                             </span>
                                         </div>
                                         <div class="col s6 m6">
@@ -116,7 +116,7 @@
                                         </div>
                                         <div class="col s3 m3">
                                             <span class="orange-text">
-                                                Rp. <?= $value['pinjaman_total'] ?>
+                                                Rp. <?= number_format($value['pinjaman_total']); ?>
                                             </span>
                                         </div>
                                         <div class="col s6 m6">
@@ -143,7 +143,7 @@
                         <ul class="collection">
                             <li class="collection-item avatar">
                                 <img src="<?= base_url('assets/images/gallary/1.jpg') ?>" alt="" class="circle">
-                                <h5 class="no-margin">Fotocopy KTP</h5>
+                                <h5 class="no-margin">Foto KTP</h5>
                                 <a href="<?= base_url('assets/gambar/ktp/') . $ktp['foto_ktp']; ?>" target="_blank" class="secondary-content blue-text"><i class="mdi-image-remove-red-eye"></i></a>
                             </li>
                         </ul>

@@ -45,7 +45,7 @@
                                 <td class="grey-text text-darken-1">
                                     <?= $value['angsuran_date_created'] ?>
                                 </td>
-                                <td class="grey-text text-darken-1"><?= $value['angsuran_jumlah'] ?></td>
+                                <td class="grey-text text-darken-1"><?= number_format($value['angsuran_jumlah']); ?></td>
                                 <td>
                                     <div class="row">
                                         <a href="#" class="btn-flat waves-effect waves-orange col l6 center" title="ubah data">
@@ -128,8 +128,8 @@
 
             <div class="input-field col s12 m12">
                 <i class="mdi-image-timer prefix grey-text text-lighten-1"></i>
-                <input id="tenggat" type="text" class="validate" name="tenggat_waktu" required value="hari" readonly disabled>
-                <label for="tenggat">Jangka Waktu Peminjaman (hari)</label>
+                <input id="tenggat" type="text" class="validate" name="tenggat_waktu" required value="bulan" readonly disabled>
+                <label for="tenggat">Jangka Waktu Peminjaman (bulan)</label>
             </div>
 
             <!--            <div class="col s12 m12 ">-->
